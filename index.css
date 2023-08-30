@@ -82,7 +82,7 @@
 }
 
 .actriss-name {
-    color: white;
+    color: #e90c0c;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
     padding: 25px;
@@ -91,12 +91,13 @@
 .mini-info {
     padding: 15px;
     margin-left: 20px;
-    color: white;
+    color: #2b2323;
+    line-height: 191px;
+    font-weight: bolder;
 }
 
 #biography {
     background-color: azure;
-    /* margin: 40px 80px; */
 }
 
 .bio {
