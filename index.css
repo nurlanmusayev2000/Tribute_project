@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+}
+
+.nav {
+    background-color: grey;
+    margin: 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px 100px;
+}
+
+.nav-bar {
+    display: none;
+}
+
+@media (max-width:670px) {
+    .nav-list {
+        margin: 3px 0;
+    }
+}
+
+@media (max-width:465px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-bar {
+        display: block;
+        font-size: 2rem;
+        padding: 10px;
+        color: white;
+        text-align: end;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .active {
+        margin: 3px 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav-list>li {
+    display: flex;
+    margin: 3px;
+    justify-content: space-between;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+
+.nav-list>li>a:hover {
+    background-color: white;
+    color: black;
+}
+
+#home {
+    background-image: url("images/closer-hl-margot-robbie.avif");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:465px) {
+    #home {
+        background-repeat: no-repeat;
+        height: 47vh;
+    }
+}
+
+.actriss-name {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    padding: 25px;
+}
+
+.mini-info {
+    padding: 15px;
+    margin-left: 20px;
+    color: white;
+}
+
+#biography {
+    background-color: azure;
+    /* margin: 40px 80px; */
+}
+
+.bio {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+#biography h2 {
+    margin-bottom: 35px;
+}
+
+#biography img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.bio p {
+    line-height: 30px;
+}
+
+
+/* section.main {
+    margin-top: 55px;
+} */
+
+#filmography {
+    background: rgb(118, 118, 128);
+}
+
+#filmography h2 {
+    display: grid;
+    justify-content: center;
+    padding: 25px;
+}
+
+.card-item {
+    border: 2px dashed #6f5932;
+    display: inline-flex;
+    padding: 40px 15px;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 20px;
+    width: 320px;
+}
+
+.film-cards img {
+    border-radius: 50%;
+}
+
+.linked {
+    padding-top: 40px;
+}
+
+.film-cards {
+    margin: 5px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+#awards h2 {
+    text-align: center;
+    padding: 25px;
+}
+
+#awards {
+    background-color: rgb(224, 221, 221);
+}
+
+.award-card-item img {
+    border-radius: 50%;
+}
+
+.award-card-item {
+    background-color: #6f6f79;
+    border-radius: 10px;
+    line-height: 30px;
+    padding: 15px;
+    height: 300px;
+    width: 180px;
+    margin-bottom: 20px;
+    box-shadow: -2px 2px 2px #3b3636;
+}
+
+.award-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#info {
+    background-color: lightblue;
+    text-align: center;
+    padding: 50px;
+}
+
+#info h3 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+#info div p {
+    display: inline;
+    padding: 30px;
+    font-size: 3rem;
+}
+
+@media (max-width:650px) {
+    #info h3 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    #info div p {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+}
